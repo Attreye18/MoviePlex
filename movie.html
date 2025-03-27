@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendation System</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-banner">
+        <h1>Find Your Perfect Movie 🎥</h1>
+    </div>
+
+    <h2>Select Your Preferences</h2>
+    <form action="recommend.php" method="POST">
+        <label>Choose Genre:</label>
+        <select name="genre">
+            <option value="Action">Action</option>
+            <option value="Thriller/Suspense">Thriller/Suspense</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance/Drama">Romance/Drama</option>
+            <option value="Sci-Fi">Science Fiction</option>
+            <option value="Horror">Horror</option>
+            <option value="Biography">Biography</option>
+            <option value="Animated">Animated</option>
+        </select>
+        <br><br>
+
+        <label>Choose Language:</label>
+        <select name="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Odia">Odia</option>
+        </select>
+        <br><br>
+
+        <label>Choose Movie Era:</label>
+        <select name="era">
+            <option value="1900">1900s (Old)</option>
+            <option value="2000">2000s (New)</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <h2>Popular Picks 🎬</h2>
+    <div class="movie-gallery">
+        <img src="images/titanic.jpg" alt="titanic">
+        <img src="images/jab_we_met.jpg" alt="jab_we_met">
+        <img src="images/belaseshe.jpg" alt="belaseshe">
+        <img src="images/elemental.jpg" alt="elemental">
+        <img src="images/the_fault_in_our_stars.png" alt="the_fault_in_our_stars">
+    </div>
+</body>
+</html>
